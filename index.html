@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Stay Healthy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fbfaf5;
+            color: #18352c;
+        }
+
+        header {
+            background: #174b3b;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            min-height: 450px;
+            background: linear-gradient(
+                120deg,
+                #174b3b,
+                #397e5d
+            );
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            padding: 14px 30px;
+            background: white;
+            color: #174b3b;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #dff3e8;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            color: #174b3b;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #62766d;
+            font-size: 16px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            transition: 0.3s;
+            border: 1px solid #e8eee8;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #174b3b;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #62766d;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .conclusion {
+            background: #dff3e8;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        .conclusion h2 {
+            color: #174b3b;
+            margin-bottom: 15px;
+        }
+
+        .conclusion p {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #174b3b;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        footer p {
+            margin-top: 10px;
+            color: #dff3e8;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            header {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>🌿 HEALTHY LIFE</h2>
+        <a href="#tips">HEALTH TIPS ↓</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div>
+            <h1>How to Stay Healthy</h1>
+
+            <p>
+                Simple ways to take care of your body
+                and mind and live a healthy life.
+            </p>
+
+            <button onclick="showTips()">
+                Explore Health Tips
+            </button>
+        </div>
+    </section>
+
+    <!-- HEALTH TIPS -->
+    <section class="container" id="tips">
+
+        <div class="section-title">
+            <h2>8 Simple Healthy Habits</h2>
+
+            <p>
+                Small habits can make our lives better.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🥗</div>
+                <h3>1. Eat Healthy Food</h3>
+                <p>
+                    We should eat fruits and vegetables.
+                    Healthy food gives us energy.
+                    We should also eat breakfast every day.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💧</div>
+                <h3>2. Drink Water</h3>
+                <p>
+                    Water is important for our bodies.
+                    We should drink enough water every day.
+                    It helps us stay healthy.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚴</div>
+                <h3>3. Do Exercise</h3>
+                <p>
+                    We should do exercise every day.
+                    Walking, running and cycling are good activities.
+                    Exercise makes us stronger.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌙</div>
+                <h3>4. Get Enough Sleep</h3>
+                <p>
+                    Sleep is very important.
+                    Teenagers usually need 8–10 hours
+                    of sleep every night.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🪥</div>
+                <h3>5. Personal Hygiene</h3>
+                <p>
+                    We should wash our hands,
+                    brush our teeth and take showers.
+                    Clean habits protect us from germs.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">😊</div>
+                <h3>6. Mental Health</h3>
+                <p>
+                    We should spend time with family
+                    and friends. We should relax
+                    and enjoy our hobbies.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌳</div>
+                <h3>7. Spend Time Outdoors</h3>
+                <p>
+                    Fresh air and time in nature
+                    can help us relax.
+                    We can walk in a park.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">❤️</div>
+                <h3>8. Make Healthy Choices</h3>
+                <p>
+                    Healthy living is not about being perfect.
+                    Small, regular habits can make
+                    our lives better.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- CONCLUSION -->
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+
+            <p>
+                Healthy food, exercise, water and good sleep
+                are very important.
+
+                Small healthy habits can make our lives better.
+                <br><br>
+                <strong>Thank you for listening!</strong>
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>🌿 Stay Healthy, Stay Happy!</h2>
+        <p>How to Stay Healthy - English Presentation</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function showTips() {
+
+            const tipsSection = document.getElementById("tips");
+
+            tipsSection.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
